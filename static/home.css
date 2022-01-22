@@ -67,13 +67,19 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff;
+
+  background: linear-gradient(to top right, #336699 0%, #993399 100%);
+  background-size: 100%;
+  background-attachment: fixed;
 }
 .card1 {
   /* Add shadows to create the "card" effect */
+      	padding: 50px;
+      	border-radius: 20px;
+      	background: #fff;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.9);
   transition: 0.3s;
 	margin: 40px;
-	padding: 20px;
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -3232,7 +3238,7 @@ input[type=button].btn-block:hover {
 .dropdown-item:hover, .dropdown-item:focus {
   color: #16181b;
   text-decoration: none;
-  box-shadow: 0 0 20px 0 #ff66ff;
+ box-shadow: 0 0 20px 0 #ff66ff;
   background: linear-gradient(to right, #66ffff 0%, #ff99ff 100%);
 }
 .dropdown-item.active, .dropdown-item:active {
