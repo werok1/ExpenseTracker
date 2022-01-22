@@ -3218,20 +3218,22 @@ input[type=button].btn-block:hover {
 
 .dropdown-item {
   display: block;
+  color: white;
+  font-family: 'Raleway', sans-serif;
   width: 100%;
   padding: 0.25rem 1.5rem;
   clear: both;
   font-weight: 400;
-  color: #212529;
   text-align: inherit;
   white-space: nowrap;
-  background-color: transparent;
+  background: linear-gradient(to right, #00ffff 0%, #ff66ff 100%);
   border: 0;
 }
 .dropdown-item:hover, .dropdown-item:focus {
   color: #16181b;
   text-decoration: none;
-  background-color: #f8f9fa;
+  box-shadow: 0 0 20px 0 #ff66ff;
+  background: linear-gradient(to right, #66ffff 0%, #ff99ff 100%);
 }
 .dropdown-item.active, .dropdown-item:active {
   color: #fff;
