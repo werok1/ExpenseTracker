@@ -2982,7 +2982,24 @@ fieldset:disabled a.btn {
 input[type=submit].btn-block,
 input[type=reset].btn-block,
 input[type=button].btn-block {
-  width: 100%;
+  background: linear-gradient(to right, #00ffff 0%, #ff66ff 100%);
+      	width: 20%;
+      	padding: 15px;
+      	display: block;
+      	margin: 25px auto 25px auto;
+      	border-radius: 20px;
+      	border: none;
+      	font-family: 'Raleway', sans-serif;
+      	font-size: 20px;
+      	font-weight: 600;
+      	color: white;
+}
+
+input[type=submit].btn-block: hover,
+input[type=reset].btn-block:hover,
+input[type=button].btn-block:hover {
+  box-shadow: 0 0 20px 0 #ff66ff;
+      	background: linear-gradient(to right, #66ffff 0%, #ff99ff 100%);
 }
 
 .fade {

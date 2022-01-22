@@ -87,12 +87,12 @@ body, html {
   }
   
   a {
-      color: lightskyblue;
+      color: #006699;
       text-decoration: none;
-  
-      
   }
-  
+
   a:hover{
       color: mediumblue;
+      box-shadow: 0 0 20px 0 #ff66ff;
+      background: linear-gradient(to right, #66ffff 0%, #ff99ff 100%);
   }
