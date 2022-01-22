@@ -16,7 +16,6 @@
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <a class="navbar-brand" href="/index">Menu</a>
-            <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
             <!-- Navbar Search-->
             <form method="get" action="/searching" class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
             {% csrf_token %}
@@ -89,8 +88,8 @@
                         <h1 class="mt-4">Expense Tracker</h1>
                         <div class="card1">
                         <h4><b>My Wallet</b></h4>
-                        Add Expense or Money   <button class="b1" onclick="location.href='/addmoney';">
-                        <i class="fa fa-plus-circle" style="font-size:48px;color:black"></i>
+                                <button class="b1" onclick="location.href='/addmoney';">
+                        <i class="fa fa-plus-circle" style="font-size:48px;color:white"></i>
                         </button>
                         </div>
                         <div class="card1">
