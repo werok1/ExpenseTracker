@@ -98,23 +98,10 @@
                         <div class="card1">
                         <h4><b>My Wallet</b></h4>
                         Add Expense or Money   <button class="b1" onclick="location.href='/addmoney';">
-                        <i class="fa fa-plus-circle" style="font-size:48px;color:red"></i>
+                        <i class="fa fa-plus-circle" style="font-size:48px;color:black"></i>
                         </button> 
                         </div>
-                        <br>
-                        <br>
-                        <!--<div class="card w-175">
-                        <div class="card-body">
-                      <h5 class="card-title">My Wallet</h5>
-                      <p class="card-text">Add Expense or Money</p>
-                      <p align="right">
-                       <button class="b1" onclick="location.href='/addmoney';">
-                        <i class="fa fa-plus-circle" style="font-size:48px;color:red"></i>
-                        </button> 
-                        </p>
-                    </div>
-                   </div>-->
-                        <div class="card mb-4">
+                        <div class="card1">
                             <div class="card-header">
                                 <i class="fas fa-table mr-1"></i>
                                 Latest History
@@ -123,7 +110,7 @@
                                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                 <thead>
                                             <tr>
-                                                <th>What you added</th>
+                                                <th>Exense/Income</th>
                                                 <th>Amount</th>
                                                 <th>Category</th>
                                                 <th>Date</th>
@@ -139,8 +126,8 @@
                                                 <td>{{info.quantity}}</td>
                                                 <td>{{info.Category}}</td>
                                                 <td>{{info.Date}}</td>
-                                                <td><a href="{% url 'expense_edit' info.id %}" class = " btn btn-success ">Edit</a></td>
-                                                <td><a href="{% url 'expense_delete' info.id %}" class = " btn btn-danger ">Delete</a></td>
+                                                <td><a href="{% url 'expense_edit' info.id %}" class = " btn2">Edit</a></td>
+                                                <td><a href="{% url 'expense_delete' info.id %}" class = "btn3">Delete</a></td>
                                             </tr>
                                  
                                     {% endfor %}

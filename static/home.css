@@ -86,6 +86,37 @@ body {
 .card1:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.9);
 }
+
+.btn2{
+background: linear-gradient(to right, #00ffff 0%, #ff66ff 100%);
+      	padding: 5px;
+      	display: block;
+      	border-radius: 10px;
+      	border: none;
+      	font-family: 'Raleway', sans-serif;
+      	font-size: 15px;
+      	font-weight: 300;
+      	color: white;
+}
+
+.btn3{
+background: linear-gradient(to left, #00ffff 0%, #ff66ff 100%);
+      	padding: 5px;
+      	display: block;
+      	border-radius: 10px;
+      	border: none;
+      	font-family: 'Raleway', sans-serif;
+      	font-size: 15px;
+      	font-weight: 300;
+      	color: white;
+}
+
+  .btn2:hover,
+  .btn3:hover{
+      box-shadow: 0 0 20px 0 #ff66ff;
+      	background: linear-gradient(to right, #66ffff 0%, #ff99ff 100%);
+  }
+
 .b1{
 border-style: none;
 	border: none;
@@ -1717,6 +1748,7 @@ pre code {
   width: 100%;
   margin-bottom: 1rem;
   color: #212529;
+  text-align: center;
 }
 .table th,
 .table td {
@@ -7669,6 +7701,7 @@ button.bg-dark:focus {
 .mt-4,
 .my-4 {
   margin-top: 1.5rem !important;
+  color: white;
 }
 
 .mr-4,
