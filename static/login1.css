@@ -1,7 +1,7 @@
 body, html {
     height: 100%;
-      font-family: 'Big Shoulders Stencil Text', cursive;color: white;
-  
+      font-family:  "Helvetica Neue", monospace;color: white;
+    font-size: 20px;
   }
   
   * {
@@ -44,29 +44,32 @@ body, html {
   }
   
   .btnn button{
-      background-color: lawngreen;
-      border-radius: 20px;
-       font-family: 'Big Shoulders Stencil Text', cursive;
-      color: black;
-  padding-left: 15px;
-      padding-right: 15px;	
+      	background: linear-gradient(to right, #00ffff 0%, #ff66ff 100%);
+      	width: 20%;
+      	padding: 15px;
+      	display: block;
+      	margin: 25px auto 25px auto;
+      	border-radius: 20px;
+      	border: none;
+      	font-family: 'Raleway', sans-serif;
+      	font-size: 20px;
+      	font-weight: 600;
+      	color: white;
       
   }
   
   .btnn button:hover{
-      background-color: forestgreen;
-      color: white;
-      transition: 0.5s;
-   box-shadow: 5px 5px 5px 5px black;
+      box-shadow: 0 0 20px 0 #ff66ff;
+      	background: linear-gradient(to right, #66ffff 0%, #ff99ff 100%);
   }
   
   a {
-      color: lightskyblue;
+      color: #006699;
       text-decoration: none;
-  
-      
   }
   
   a:hover{
       color: mediumblue;
+      box-shadow: 0 0 20px 0 #ff66ff;
+      background: linear-gradient(to right, #66ffff 0%, #ff99ff 100%);
   }
