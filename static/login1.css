@@ -10,7 +10,7 @@ body, html {
   
   .bg-image {
     /* The image used */
-    background-image: url("../static/img/burningm.jpg");
+    background-image: url("../static/img/tlo-logowanie.jpg");
   
     /* Add the blur effect */
     filter: blur(0px);
