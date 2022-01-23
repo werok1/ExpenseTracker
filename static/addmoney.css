@@ -1,54 +1,89 @@
-body, html {
-    height: 100%;
-  font-family: "Helvetica Neue", monospace;
-  line-height: 2;
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  }
-  
-  * {
-	box-sizing: border-box;
-  }
-  .h1{
-	  color: darkgreen;
-  }
-  .bg-image {
-	  display: flex;
-	  justify-content: center;
-	  background: linear-gradient(to top right, #336699 0%, #993399 100%);
-	  background-attachment: fixed;
-
-	/* Add the blur effect */
-	filter: blur(8px);
-	-webkit-filter: blur(8px);
-
-	/* Full height */
+html {
 	height: 100%;
+	font-family: "Helvetica Neue", monospace;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	padding: 50px;
+	background: linear-gradient(to top right, #336699 0%, #993399 100%);
+	background-size: 100%;
+	background-attachment: fixed;
   }
-  
-  /* Position text in the middle of the page/image */
-  .bg-text {
-	background-color: rgb(0,0,0); /* Fallback color */
-	background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-	color: white;
-	font-weight: bold;
 
-  border: 3px solid #f1f1f1;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	z-index: 2;
-	width: 80%;
-	padding: 20px;
-	text-align: center;
-	  line-height: 1.5em;}
+      h1 {
+      	font-family: 'Raleway', sans-serif;
+      	color: black;
+      	text-align: center;
+      	font-size: 40px;
+      	letter-spacing: 4px;
+      	line-height: 3.5 font-weight: 700;
+      }
 
-  
-  .btnn button{
+      form {
+      	padding: 50px;
+      	width: 550px;
+      	border-radius: 20px;
+      	background: #fff;
+      }
+
+      input::placeholder,
+      textarea::placeholder {
+      	color: #666;
+      	font-family: 'Raleway', sans-serif;
+      	font-size: 15px;
+      	font-weight: 300;
+      }
+
+      input:hover,
+      textarea:hover {
+      	box-shadow: 0 0 20px 0 #ff66ff;
+      }
+
+      .dane {
+      	display: flex;
+      	flex-wrap: wrap;
+      	justify-content: center;
+      }
+
+      .jezyki {
+      	justify-content: right;
+      	margin-left: 10%;
+      	font-size: 15px;
+      }
+
+      #name1 {
+      	float: left;
+      	width: 44%;
+      }
+
+      #name2 {
+      	float: left;
+      	width: 44%;
+      }
+
+      .dane input,
+      textarea {
+      	display: block;
+      	width: 80%;
+      	padding: 10px;
+      	margin: 20px auto 20px auto;
+      	border: none;
+      	border-radius: 10px;
+      	background: #d0dfe8;
+      	font-size: 15px;
+      }
+
+      .dane input {
+      	height: 20px;
+      	margin-top: 0px;
+      }
+
+      button {
       	background: linear-gradient(to right, #00ffff 0%, #ff66ff 100%);
-      	width: 20%;
-      	padding: 15px;
+      	width: 30%;
+      	padding: 10px;
       	display: block;
       	margin: 25px auto 25px auto;
       	border-radius: 20px;
@@ -57,12 +92,29 @@ body, html {
       	font-size: 20px;
       	font-weight: 600;
       	color: white;
+      }
 
-  }
-
-  .btnn button:hover{
-      box-shadow: 0 0 20px 0 #ff66ff;
+      button:hover {
+      	box-shadow: 0 0 20px 0 #ff66ff;
+      	color: #006699;
       	background: linear-gradient(to right, #66ffff 0%, #ff99ff 100%);
-  }
-  
-			  
+      }
+
+      p {
+      	font-family: 'Montserrat', sans-serif;
+      	margin-left: 30px;
+      }
+
+      label {
+      	font-family: 'Montserrat', sans-serif;
+      	line-height: 2;
+      }
+
+      a:link {
+      	color: black;
+      	text-decoration: none;
+      }
+
+      a:hover {
+      	text-decoration: underline;
+      }
