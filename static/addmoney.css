@@ -1,5 +1,9 @@
 body, html {
-	height: 100%;
+    height: 100%;
+  font-family: "Helvetica Neue", monospace;
+  line-height: 2;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
   
   * {
@@ -9,20 +13,17 @@ body, html {
 	  color: darkgreen;
   }
   .bg-image {
-	/* The image used */
-	background-image: url("../static/img/coin.jpg");
-  
+	  display: flex;
+	  justify-content: center;
+	  background: linear-gradient(to top right, #336699 0%, #993399 100%);
+	  background-attachment: fixed;
+
 	/* Add the blur effect */
 	filter: blur(8px);
 	-webkit-filter: blur(8px);
-  
+
 	/* Full height */
 	height: 100%;
-  
-	/* Center and scale the image nicely */
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
   }
   
   /* Position text in the middle of the page/image */
@@ -31,7 +32,7 @@ body, html {
 	background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
 	color: white;
 	font-weight: bold;
-  font-family: 'Big Shoulders Stencil Display', cursive;
+
   border: 3px solid #f1f1f1;
 	position: absolute;
 	top: 50%;
@@ -42,22 +43,26 @@ body, html {
 	padding: 20px;
 	text-align: center;
 	  line-height: 1.5em;}
-  .btn{
-  padding-top: 20px;}
+
   
-  .btn button{
-	  background-color: green;
-	  font-family: 'Big Shoulders Stencil Display', cursive;
-  color: white;
-	  border-radius: 20px;
-	  padding: 10px;
-	  
+  .btnn button{
+      	background: linear-gradient(to right, #00ffff 0%, #ff66ff 100%);
+      	width: 20%;
+      	padding: 15px;
+      	display: block;
+      	margin: 25px auto 25px auto;
+      	border-radius: 20px;
+      	border: none;
+      	font-family: 'Raleway', sans-serif;
+      	font-size: 20px;
+      	font-weight: 600;
+      	color: white;
+
   }
-  
-  .btn button:hover{
-	  background-color: darkgreen;
-	  transition: 1s;
-   box-shadow: 5px 5px 5px 5px black;
+
+  .btnn button:hover{
+      box-shadow: 0 0 20px 0 #ff66ff;
+      	background: linear-gradient(to right, #66ffff 0%, #ff99ff 100%);
   }
   
 			  
