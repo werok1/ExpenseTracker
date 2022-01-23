@@ -71,14 +71,6 @@
                 </nav>
             </div>
             <div id="layoutSidenav_content">
-            {% for message in messages %}
-                <div class="alert alert-{{ message.tags }} mb-0 alert-dismissible fade show my-10" role="alert">
-                    <strong>Message :</strong>{{ message }}
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-            {% endfor %}
                 <main>
                     <div class="container-fluid">
                         <h1 class="mt-4">Monthly Expense</h1>
