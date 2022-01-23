@@ -74,9 +74,9 @@ body {
 }
 .card1 {
   /* Add shadows to create the "card" effect */
-      	padding: 50px;
-      	border-radius: 20px;
-      	background: #fff;
+  padding: 50px;
+ border-radius: 20px;
+ background: #fff;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.9);
   transition: 0.3s;
 	margin: 40px;
@@ -119,14 +119,14 @@ background: linear-gradient(to left, #00ffff 0%, #ff66ff 100%);
 
 .b1{
   background: linear-gradient(to right, #00ffff 0%, #ff66ff 100%);
-      	padding: 5px;
-      	display: block;
-      	border-radius: 30px;
-      	border: none;
-      	font-family: 'Raleway', sans-serif;
-      	font-size: 15px;
-      	font-weight: 300;
-      	color: white;
+  padding: 5px;
+  display: block;
+  border-radius: 30px;
+  border: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: white;
 	position: relative;
 	left:80%;
 }
