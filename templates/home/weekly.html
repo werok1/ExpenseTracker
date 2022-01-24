@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Dashboard - SB Admin</title>
+        <title>Weekly summary</title>
         <link rel="stylesheet" type="text/css" href="{% static 'home.css' %}">
         <link rel="stylesheet" type="text/css" href="{% static 'addmoney.css' %}">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
@@ -70,36 +70,42 @@
                 </nav>
             </div>
             <div id="layoutSidenav_content">
+
                 <main>
                     <div class="container-fluid">
                         <h1 class="mt-4">Weekly Expense</h1>
-                                    </div>
-                            <div class="row">
-                            <div class="col-lg-6">
-                                <div class="card mb-4">
-                                    <div class="card-header">
-                                        <i class="fas fa-chart-pie mr-1"></i>
-                                        Weekly Expense
-                                    </div>
-                                    <div class="container"style="width:100%;">
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="card mb-4">
+                                <div class="card-header">
+                                    <i class="fas fa-chart-pie mr-1"></i>
+                                    Weekly Expense
+                                </div>
+                                <div class="container"style="width:110%;">
                                     <div class="card-body"><canvas id="myChart" width="400" height="400"></canvas></div>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 " >
+                            <div class="card mb-4">
+                                <div class="card-header">
+                                    <i class="fas fa-chart-bar mr-1"></i>
+                                    Weekly Record
                                 </div>
-                                </div>
-                                <div class="col-lg-6">
-                                <div class="card mb-4">
-                                    <div class="card-header">
-                                        <i class="fas fa-chart-pie mr-1"></i>
-                                        Weekly Expense
-                                    </div>
-                                    <div class="card-body">
-                                  <p> Amount spent this week : {{addmoney_info.sum}}</p>
+                                <div class="card-body">
+                                    <p> Amount spent this week : {{addmoney_info.sum}}</p>
                                   <p> Amount saved this week : {{addmoney_info.x}}</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    </div>
                 </main>
+            </div>
+        </div>
+
+
 {% comment %} <div class="container"style="width:30%;">
 <canvas id="myChart" width="400" height="400" ></canvas>
 </div> {% endcomment %}
