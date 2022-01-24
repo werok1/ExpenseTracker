@@ -127,8 +127,7 @@ background: linear-gradient(to left, #00ffff 0%, #ff66ff 100%);
   font-size: 15px;
   font-weight: 300;
   color: white;
-	position: relative;
-	left:80%;
+
 }
 .b1:hover{
   box-shadow: 0 0 20px 0 #ff66ff;
@@ -312,7 +311,6 @@ button,
 select,
 optgroup,
 textarea {
-  margin: 0;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
