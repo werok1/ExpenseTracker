@@ -13,7 +13,7 @@ import requests
 
 #function for scrapping news
 
-def news(request):
+def info(request):
     url = 'https://newsapi.org/v2/everything?q=Cryptocurrency&from=2022-01-22&sortBy=popularity&apiKey=8045597ecaa244e88c37ed50a7fef00c'
     crypto_news = requests.get(url).json()
     a = crypto_news['articles']
@@ -27,7 +27,7 @@ def news(request):
         img.append(f['urlToImage'])
     mylist = zip(title, desc, img)
     context = {'mylist': mylist}
-    return render(request, 'info.html', context)
+    return render(request, 'home/info.html', context)
 
 # Create your views here.
 def home(request):
@@ -369,7 +369,4 @@ def info_year(request):
             finalrep[y]= get_expense_category_amount(y,"Expense")
 
     return JsonResponse({'expense_category_data': finalrep}, safe=False)
-
-def info(request):
-    return render(request,'home/info.html')
      
