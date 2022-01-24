@@ -90,8 +90,23 @@
                     <div class="container-fluid">
                         <h1 class="mt-4">Expense Tracker</h1>
                         <div class="card1">
+                            {% for title, desc, i in mylist %}
+                                <div class="box">
+                                    <article class="media">
+                                        <div class="media-content">
+                                            <div class="content">
+                                                <p>
+                                                    <span class="title">{{ title }}</span>
+                                                    <br>
+                                                    <img src="{{ i }}" alt="">
+                                                    <span class="subtitle">{{ desc }}</span>
 
-
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            {% endfor %}
                         </div>
                     </div>
                 </main>
