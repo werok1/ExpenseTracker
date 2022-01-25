@@ -9,23 +9,27 @@ from django.core.paginator import Paginator, EmptyPage , PageNotAnInteger
 from django.db.models import Sum
 from django.http import JsonResponse
 import datetime
-import requests
+from newsapi import NewsApiClient
 
 #function for scrapping news
 
 def info(request):
-    url = 'https://newsapi.org/v2/everything?q=Cryptocurrency&from=2022-01-22&sortBy=popularity&apiKey=8045597ecaa244e88c37ed50a7fef00c'
-    crypto_news = requests.get(url).json()
-    a = crypto_news['articles']
-    desc =[]
-    title =[]
-    img =[]
-    for i in range(len(a)):
-        f = a[i]
-        title.append(f['title'])
+    newsapi = NewsApiClient(api_key='8045597ecaa244e88c37ed50a7fef00c')
+    top = newsapi.get_top_headlines(sources='techcrunch')
+
+    l = top['articles']
+    desc = []
+    news = []
+    img = []
+    link = []
+
+    for i in range(len(l)):
+        f = l[i]
+        news.append(f['title'])
         desc.append(f['description'])
         img.append(f['urlToImage'])
-    mylist = zip(title, desc, img)
+        link.append(f['url'])
+    mylist = zip(news, desc, img, link)
     context = {'mylist': mylist}
     return render(request, 'home/info.html', context)
 
